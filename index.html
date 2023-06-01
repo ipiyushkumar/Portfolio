@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px; /* Increase the max-width for laptops */
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      background-image: linear-gradient(to right, #b2e8ff, #c3fdff);
+      transition: box-shadow 0.3s;
+      justify-content: space-between; /* Spread the container horizontally */
+      align-items: flex-start;
+      transform-style: preserve-3d; /* Enable 3D transforms for the container */
+    }
+    .container.flipped {
+      transform: rotateY(180deg); /* Rotate the container 180 degrees when flipped */
+    }
+    .profile {
+      width: 40%;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+      transition: transform 0.3s;
+      backface-visibility: hidden; /* Hide the backface of the profile section */
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .profile > .content {
+        margin-top: 10px;
+    }
+    .content {
+      width: 60%; /* Adjust the width to leave space for distinction */
+      padding-left: 30px;
+      backface-visibility: hidden; /* Hide the backface of the content section */
+    }
+    h1, h2, p {
+      margin: 0;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .section {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      transition: transform 0.3s;
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    .section ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    .section li {
+      margin-bottom: 5px;
+    }
+    /* Add hover effect to sections */
+    .section:hover {
+        transform: scale(1.02);
+    }
+    .social {
+      margin-top: 20px;
+    }
+    .social a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #333;
+    }
+    .cover-letter {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+    .hidden{
+        display: none;
+    }
+    
+    /* Media Queries for Smartphone and Laptop Friendly Design */
+    @media only screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+      .profile {
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+      }
+      .content {
+        width: 100%;
+        padding-left: 0;
+      }
+      .cover-letter {
+        position: static;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="https://media.licdn.com/dms/image/D4D03AQHlAe95bttQGg/profile-displayphoto-shrink_200_200/0/1675842181028?e=1691020800&v=beta&t=a-Z62JxU7Scp8payz-tYAAxgyAi18DU0BHBxrKeKMc8" alt="Profile Picture">
+      <h1>Piyush Kumar</h1>
+      <p>Email: piyushat115@gmail.com</p>
+      <p>Phone: +91 887 231 2995</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/piyush-kumar-4199a5202/">LinkedIn</a>
+        <a href="https://github.com/dark-king-001">GitHub</a>
+        <a href="#">Twitter</a>
+      </div>
+      <div class="section">
+        <h2>Summary</h2>
+        <p>I am a skilled and motivated individual with expertise in Python programming, machine learning, and web development. With valuable experience in projects such as custom UI development and text chatroom creation, Piyush brings a strong skill set in Express.js, Python, C++, and MongoDB. Ready to contribute to challenging technical projects, Piyush is an asset to any company.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h2>Education</h2>
+        <ul>
+          <li>B.Tech, Computer Science & Engineering</li>
+          <li>Seth Jai Parkash Mukund Lal Institute of Engineering and Technology, Radaur</li>
+          <li>2020 - 2024</li>
+        </ul>
+        <ul>
+          <li>Senior Secondary (XII), Science</li>
+          <li>CBSE board</li>
+          <li>Year of completion: 2020</li>
+          <li>Percentage: 74.00%</li>
+        </ul>
+        <ul>
+          <li>Secondary (X)</li>
+          <li>CBSE board</li>
+          <li>Year of completion: 2018</li>
+          <li>Percentage: 70.00%</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Trainings</h2>
+        <ul>
+          <li>Python With Machine Learning</li>
+          <li>The Core Systems, Chandigarh</li>
+          <li>Jul 2022 - Sep 2022</li>
+          <li>Python, Processing Datasets, Training Prediction models</li>
+        </ul>
+        <ul>
+          <li>The Web Developer Bootcamp 2021</li>
+          <li>udemy, Online</li>
+          <li>Aug 2021 - Sep 2021</li>
+          <li>MongoDB, NodeJS, ExpressJS, and EJS</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://github.com/dark-king-001/OpenAI_Python_Interface">Custom UI For OpenAI Backend API</a></li>
+          <li>Nov 2022 - Nov 2022</li>
+          <li>Custom UI for Open AI</li>
+        </ul>
+        <ul>
+          <li><a href="https://github.com/dark-king-001/RoomTalk">RoomTalk</a></li>
+          <li>Oct 2021 - Nov 2021</li>
+          <li>Simple Text Chatroom</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>Express.js - Intermediate</li>
+          <li>Python - Intermediate</li>
+          <li>C++ Programming - Advanced</li>
+          <li>MongoDB - Intermediate</li>
+        </ul>
+      </div>
+    </div>
+    <div id="cover-letter" class="content hidden">
+      <div class="section">
+        <h2>Cover Letter</h2>
+        <p>Dear Hiring Manager,</p>
+        <p>I am writing to express my interest in the position at your company. I believe that my skills and experience make me a strong candidate for the role.</p>
+        <p>Throughout my career, I have gained valuable experience in Python programming, machine learning, and web development. I have successfully completed projects such as custom UI development and text chatroom creation, which have honed my skills in Express.js, Python, C++, and MongoDB.</p>
+        <p>I am passionate about tackling challenging technical projects and I am always eager to learn and adapt to new technologies. I believe that my strong problem-solving abilities and attention to detail make me a valuable asset to any team.</p>
+        <p>Thank you for considering my application. I would welcome the opportunity to discuss how I can contribute to your company's success. Please find my attached resume for more details about my qualifications.</p>
+        <p>Best regards,</p>
+        <p>Piyush Kumar</p>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="cover-letter" onclick="toggleCoverLetter()">Cover Letter</a>
+
+  <script>
+    function toggleCoverLetter() {
+      var coverLetter = document.getElementById("cover-letter");
+      coverLetter.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
+
