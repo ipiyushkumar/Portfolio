@@ -211,10 +211,16 @@
       <div class="section">
         <h2>Cover Letter</h2>
         <p>Dear Hiring Manager,</p>
+        <br>
         <p>I am writing to express my interest in the position at your company. I believe that my skills and experience make me a strong candidate for the role.</p>
+        <br>
         <p>Throughout my career, I have gained valuable experience in Python programming, machine learning, and web development. I have successfully completed projects such as custom UI development and text chatroom creation, which have honed my skills in Express.js, Python, C++, and MongoDB.</p>
+        <br>
         <p>I am passionate about tackling challenging technical projects and I am always eager to learn and adapt to new technologies. I believe that my strong problem-solving abilities and attention to detail make me a valuable asset to any team.</p>
+        <br>
         <p>Thank you for considering my application. I would welcome the opportunity to discuss how I can contribute to your company's success. Please find my attached resume for more details about my qualifications.</p>
+        <br>
+        <br>
         <p>Best regards,</p>
         <p>Piyush Kumar</p>
       </div>
@@ -224,8 +230,10 @@
 
   <script>
     function toggleCoverLetter() {
-      var coverLetter = document.getElementById("cover-letter");
-      coverLetter.classList.toggle("hidden");
+    var coverLetter = document.querySelector("#cover-letter");
+    var content = document.querySelector(".content");
+    content.classList.toggle("hidden");
+    coverLetter.classList.toggle("hidden");
     }
   </script>
 </body>
