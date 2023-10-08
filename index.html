@@ -1,235 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Piyush | Resume</title>
-  <link rel="icon" href="https://i0.wp.com/rajeshjain.com/wp-content/uploads/2020/09/68be2-cropped-cropped-r-favicon-1-1.png?fit=512%2C512&ssl=1" type="image/x-icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-      color: #00588b;
-    }
-    .container {
-      max-width: 1200px; /* Increase the max-width for laptops */
-      margin: 30px auto;
-      background-color: #fff;
-      padding: 30px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      display: flex;
-      /* background-image: linear-gradient(to right, #e2f6ff, #c3fdff); */
-      transition: box-shadow 0.3s;
-      justify-content: space-between; /* Spread the container horizontally */
-      align-items: flex-start;
-      transform-style: preserve-3d; /* Enable 3D transforms for the container */
-    }
-    .container.flipped {
-      transform: rotateY(180deg); /* Rotate the container 180 degrees when flipped */
-    }
-    .profile {
-      width: 40%;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 30px;
-      transition: transform 0.3s;
-      backface-visibility: hidden; /* Hide the backface of the profile section */
-    }
-    .profile img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s;
-    }
-    .profile > .content {
-        margin-top: 10px;
-    }
-    .content {
-      width: 60%; /* Adjust the width to leave space for distinction */
-      padding-left: 30px;
-      backface-visibility: hidden; /* Hide the backface of the content section */
-    }
-    h1, h2, p {
-      margin: 0;
-    }
-    h1 {
-      color: #00244A;
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #00244A;
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    h3 {
-        color: #00244A;
-    }
-    .section {
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-      transition: transform 0.3s;
-    }
-    .section:last-child {
-      border-bottom: none;
-    }
-    .section ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-    }
-    .section li {
-      margin-bottom: 5px;
-    }
-    /* Add hover effect to sections */
-    .section:hover {
-        transform: scale(1.02);
-    }
-    .social {
-      margin-top: 20px;
-    }
-    .social a {
-      display: inline-block;
-      margin-right: 10px;
-      color: #333;
-    }
-    .cover-letter {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #4CAF50;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 50px;
-    }
-    .hidden{
-        display: none;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Piyush</title>
+    <link rel="icon" href="https://i0.wp.com/rajeshjain.com/wp-content/uploads/2020/09/68be2-cropped-cropped-r-favicon-1-1.png?fit=512%2C512&ssl=1" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap">
+    <style>
+        /* Customize the browser scrollbar */
+        ::-webkit-scrollbar {
+        width: 10px; /* Set the width of the scrollbar */
+        }
 
-    /* Media Queries for Smartphone and Laptop Friendly Design */
-    @media only screen and (max-width: 1025px) {
-      .container {
-        flex-direction: column;
-      }
-      .profile {
-        width: 100%;
-        text-align: center;
-        border-bottom: none;
-        padding-bottom: 0;
-        margin-bottom: 20px;
-      }
-      .content {
-        width: 100%;
-        padding-left: 0;
-      }
-      .cover-letter {
-        position: fixed;
-        margin-top: 20px;
-      }
-    }
-  </style>
+        ::-webkit-scrollbar-track {
+        background-color: #f1f1f1; /* Track color */
+        }
+
+        ::-webkit-scrollbar-thumb {
+        background-color: #00588b; /* Thumb color */
+        border-radius: 5px; /* Rounded corners */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+        background-color: #003d60; /* Thumb color on hover */
+        }
+
+        a { text-decoration: none; } 
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            color: #00588b;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }     
+        h1,h2,h3 {
+            color: #00244A;
+        }
+        .container {
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile {
+            display: flex;
+        }
+        .profile > img {
+            border-radius: 100%;
+            border-width: 4px;
+            border-style: solid;
+        }
+        .break{
+            width: 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+        .leftContent {
+            flex: 1;
+            padding-right: 0px;
+        }
+        .rightContent {
+            flex: 2;
+            padding-left: 0px;
+            border-left: 2px solid #00588b;
+        }
+        .leftContent > section {
+            text-align: right;
+            padding-right: 10px;
+            border-radius: 10px;
+            border-top-style: solid;
+            border-right-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+        }
+        .rightContent > section {
+            padding-left: 10px;
+            border-radius: 10px;
+            border-top-style: solid;
+            border-right-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+        }
+        @keyframes DropDown {
+            from {max-height: 0%;}
+            to {max-height: 100%;}
+        }
+        section {
+            max-height: 0;
+            animation-fill-mode: forwards;
+            animation-name: DropDown;
+            animation-duration: 4s;
+        }
+
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="profile">
-      <img src="https://avatars.githubusercontent.com/u/76026797?s=400&u=f6f6d7aff3db4283d01ec06e74e598915e1d3652&v=4" alt="Profile Picture">
-      <h1>Piyush Kumar</h1>
-      <p>Email: piyushat115@gmail.com</p>
-      <p>Phone: +91 887 231 2995</p>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/piyush-kumar-4199a5202/">LinkedIn</a>
-        <a href="https://github.com/dark-king-001">GitHub</a>
-        <a href="https://twitter.com/home">Twitter</a>
-      </div>
-      <div class="section">
-        <h2>EDUCATION</h2>
-        <h3>Seth Jai Parkash Mukand Lal Institute of Engineering and Technology, Radaur, Bharat 2020-24</h3>
-        <h4>Bachelor of Engineering (B.E.) in Computer Engineering (81%)</h4>
-        <h3>Kendriya Vidyalaya, Chandigarh, Bharat</h3>
-        <h4>CBSE Class (XII) (74%) 2019-20</h4>
-        <h4>CBSE Class (X)  (70%) 2017-18</h4>
-      </div>
-      <div class="section">
-        <h2>SKILLS</h2>
-        <h3>NodeJS | ExpressJS | JavaScript | Pandas | BeautifulSoup | OpenCV | Python | SFML | C++ | BASH | Linux | Problem Solving</h3>
-      </div>
-    </div>
-    <div class="content">
-        <div class="section">
-            <h2 class="s9">TRAININGS</h2>
-            <h3>Python With Machine Learning | The Core Systems July.2022–Sept.2022</h3>
-            <ul>
-                <li><p>- Learned Python Basics and its Libraries such as Numpy, Keras and TensorFlow.</p></li>
-                <li><p>- Worked on Regression Models Such as linear, Polynomial and Logistic Regression Models.</p></li>
-                <li><p>- Created Hand gesture recognition with the Implementation of Artificial Intelligence model.</p></li>
-            </ul>
+    <div class="container">
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/76026797?s=400&u=f6f6d7aff3db4283d01ec06e74e598915e1d3652&v=4" alt="Profile Picture">
+            <div class="BioInfo">
+                <h1>Piyush Kumar</h1>
+                <ul>
+                    <li>piyushat115@gmail.com</li>
+                    <li>+91 887 231 2995</li>
+                    <li><a href="https://github.com/dark-king-001">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/piyush-kumar-4199a5202/">Linkedin</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="section">
-            <h2>PROJECTS</h2>
-            <h3>Scraper</h3>
-            <h4>A web scraping application which uses Aria2 to download page HTML onto the Desktop which later can be scraped to extract data</h4>
-            <ul>
-                <li><p>- Implements Python, Beautiful Soup and aria2 to Scrape different webpages.</p></li>
-                <li><p>- The site data is stored on the local file system to decrease the hassle of scraping the data again in case of data loss</p></li>
-                <li><p>- data is downloaded and scraped on downloaded pages using Subprocess and Multi-threading.</p></li>
-            </ul>
-            <h3>Snake Game</h3>
-            <h4>A basic project for a application using C++ and SFML(Simple and fast Multimedia Library) which is c++ varient of C Library SDL (Simple DirectMedia Layer) These libraries work as a Translation Layer upon OpenGL of GNU</h4>
-            <ul>
-                <li><p>- A new Game Logic for scoring and increase Player speed based on the current score.</p></li>
-                <li><p>- Learned how to create game logic in c++ to practise and enhance Core DSA concepts application practically.</p></li>
-            </ul>
-            <h3>Hand gesture Recognition System</h3>
-            <h4>A Python Script That runs a lightweight GPU Accelerated Tensor Model And takes Camera input to recognise the Hand Gestures to perform operations</h4>
-            <ul>
-                <li><p>- Implements a OpenCV-python to take a Hardware Input and deployed an AI Model.</p></li>
-                <li><p>- Live Hand Gesture Recognition to change System Volume.</p></li>
-                <li><p>- Uses GPU Hardware Acceleration By Connecting to CUDA Drivers.</p></li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>EXTRA CURRICULAR</h2>
-            <h3>Freelancing | Software Engineer (Front-end and Back-end)                          Present</h3>
-            <ul>
-                <li><p>Currently working as a freelancer on several assignments using technologies Java, JavaFX, JavaScript./p></li>
-            </ul>
+        <div class="content">
+            <div class="leftContent">
+                <section>
+                    <h2>SKILLS</h2>
+                    <h3>NodeJS | ExpressJS | JavaScript | Pandas | BeautifulSoup | OpenCV | Python | SFML | C++ | BASH | Linux | Problem Solving</h3>
+                </section>
+                <section>
+                    <h2>EDUCATION</h2>
+                    <h3>Seth Jai Parkash Mukand Lal Institute of Engineering and Technology, Radaur, Bharat 2020-24</h3>
+                    <h4>Bachelor of Engineering (B.E.) in Computer Engineering (81%)</h4>
+                    <h3>Kendriya Vidyalaya, Chandigarh, Bharat</h3>
+                    <h4>CBSE Class (XII) (74%) 2019-20</h4>
+                    <h4>CBSE Class (X)  (70%) 2017-18</h4>
+                </section>
+                <section>
+                    <h2>EXTRA CURRICULAR</h2>
+                    <h3>Freelancing | Software Engineer (Front-end and Back-end)                          Present</h3>
+                    <ul>
+                        <li><p>Currently working as a freelancer on several assignments using technologies Java, JavaFX, JavaScript.</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rightContent">
+                <section>
+                    <h2>TRAININGS</h2>
+                    <h3>Python With Machine Learning | The Core Systems July.2022–Sept.2022</h3>
+                    <ul>
+                        <li><p>Learned Python Basics and its Libraries such as Numpy, Keras and TensorFlow.</p></li>
+                        <li><p>Worked on Regression Models Such as linear, Polynomial and Logistic Regression Models.</p></li>
+                        <li><p>Created Hand gesture recognition with the Implementation of Artificial Intelligence model.</p></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>PROJECTS</h2>
+                    <h3>Web Scraper</h3>
+                    <h4>A web scraping application which uses Aria2 to download page HTML onto the Desktop which later can be scraped to extract data</h4>
+                    <ul>
+                        <li><p>Implements Python, Beautiful Soup and aria2 to Scrape different webpages.</p></li>
+                        <li><p>The site data is stored on the local file system to decrease the hassle of scraping the data again in case of data loss</p></li>
+                        <li><p>data is downloaded and scraped on downloaded pages using Subprocess and Multi-threading.</p></li>
+                    </ul>
+                    <h3>Snake Game</h3>
+                    <h4>A basic project for a application using C++ and SFML(Simple and fast Multimedia Library) which is c++ varient of C Library SDL (Simple DirectMedia Layer) These libraries work as a Translation Layer upon OpenGL of GNU</h4>
+                    <ul>
+                        <li><p>A new Game Logic for scoring and increase Player speed based on the current score.</p></li>
+                        <li><p>Learned how to create game logic in c++ to practise and enhance Core DSA concepts application practically.</p></li>
+                    </ul>
+                    <h3>Hand gesture Recognition System</h3>
+                    <h4>A Python Script That runs a lightweight GPU Accelerated Tensor Model And takes Camera input to recognise the Hand Gestures to perform operations</h4>
+                    <ul>
+                        <li><p>Implements a OpenCV-python to take a Hardware Input and deployed an AI Model.</p></li>
+                        <li><p>Live Hand Gesture Recognition to change System Volume.</p></li>
+                        <li><p>Uses GPU Hardware Acceleration By Connecting to CUDA Drivers.</p></li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </div>
-    <div id="cover-letter" class="content hidden">
-      <div class="section">
-        <h2>Cover Letter</h2>
-        <p>Dear Hiring Manager,</p>
-        <br>
-        <p>I am writing to express my interest in the position at your company. I believe that my skills and experience make me a strong candidate for the role.</p>
-        <br>
-        <p>Throughout my career, I have gained valuable experience in Python programming, machine learning, and web development. I have successfully completed projects such as custom UI development and text chatroom creation, which have honed my skills in Express.js, Python, C++, and MongoDB.</p>
-        <br>
-        <p>I am passionate about tackling challenging technical projects and I am always eager to learn and adapt to new technologies. I believe that my strong problem-solving abilities and attention to detail make me a valuable asset to any team.</p>
-        <br>
-        <p>Thank you for considering my application. I would welcome the opportunity to discuss how I can contribute to your company's success. Please find my attached resume for more details about my qualifications.</p>
-        <br>
-        <br>
-        <p>Best regards,</p>
-        <p>Piyush Kumar</p>
-      </div>
-    </div>
-  </div>
-  <a href="#" class="cover-letter" onclick="toggleCoverLetter()">Cover Letter</a>
-
-  <script>
-    function toggleCoverLetter() {
-    var coverLetter = document.querySelector("#cover-letter");
-    var content = document.querySelector(".content");
-    content.classList.toggle("hidden");
-    coverLetter.classList.toggle("hidden");
-    }
-  </script>
 </body>
 </html>
