@@ -31,7 +31,7 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f2f2f2;
             margin: 0;
-            padding: 0;
+            padding: 0px 10px;
             color: #00588b;
 
             display: flex;
@@ -55,13 +55,6 @@
             border-width: 4px;
             border-style: solid;
         }
-        .break{
-            width: 10px;
-        }
-        .content {
-            display: flex;
-            flex-direction: row;
-        }
         .content {
             display: flex;
             flex-direction: row;
@@ -73,7 +66,7 @@
         .rightContent {
             flex: 2;
             padding-left: 0px;
-            border-left: 2px solid #00588b;
+            border-left: 6px solid #00588b;
         }
         .leftContent > section {
             text-align: right;
@@ -97,10 +90,11 @@
             to {max-height: 100%;}
         }
         section {
+            border-top-width: 2px;
             max-height: 0;
             animation-fill-mode: forwards;
             animation-name: DropDown;
-            animation-duration: 4s;
+            animation-duration: 5s;
         }
 
     </style>
@@ -108,7 +102,7 @@
 <body>
     <div class="container">
         <div class="profile">
-            <img src="https://avatars.githubusercontent.com/u/76026797?s=400&u=f6f6d7aff3db4283d01ec06e74e598915e1d3652&v=4" alt="Profile Picture" height="200px" width="200px">
+            <img src="./profile.jpeg" alt="Profile Picture">
             <div class="BioInfo">
                 <h1>Piyush Kumar</h1>
                 <ul>
