@@ -4,47 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products and Services</title>
-  <link rel="stylesheet" href="services_styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="blogs.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Piyush Kumar</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="services.html">Services</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container">
     <section class="services">
-      <h1>Our Products and Services</h1>
-      <div class="card-container">
-        <div class="card">
-          <h2>Web Development</h2>
-          <p>We create responsive and dynamic websites tailored to your needs.</p>
+      <h1 class="text-center text-primary">Our Products and Services</h1>
+      <div class="row">
+        <!-- Web Development Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <h2>Web Development</h2>
+            </div>
+            <div class="panel-body">
+              <p>We create responsive and dynamic websites tailored to your needs.</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h2>Software Development</h2>
-          <p>Custom software solutions to help you streamline your business operations.</p>
+
+        <!-- Software Development Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <h2>Software Development</h2>
+            </div>
+            <div class="panel-body">
+              <p>Custom software solutions to help you streamline your business operations.</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h2>UI/UX Design</h2>
-          <p>Designing user-friendly interfaces that provide a seamless experience.</p>
+
+        <!-- UI/UX Design Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <h2>UI/UX Design</h2>
+            </div>
+            <div class="panel-body">
+              <p>Designing user-friendly interfaces that provide a seamless experience.</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h2>Consulting</h2>
-          <p>Expert advice to guide you through technology and digital transformation.</p>
+
+        <!-- Consulting Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <h2>Consulting</h2>
+            </div>
+            <div class="panel-body">
+              <p>Expert advice to guide you through technology and digital transformation.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </main>
+  </div>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="text-center" style="margin-top: 50px; padding: 20px; background-color: #f8f8f8;">
     <p>&copy; 2024 Piyush Kumar. All rights reserved.</p>
   </footer>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

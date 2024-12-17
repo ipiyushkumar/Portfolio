@@ -4,37 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blogs Home Page</title>
-  <link rel="stylesheet" href="blogs_styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="blogs.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Piyush Kumar</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="active"><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container">
     <section class="blog">
-      <h1>Blog</h1>
-      <div class="post-container">
-        <article class="post">
-          <h2><a href="#">Understanding Web Development Trends in 2024</a></h2>
-          <p class="date">August 27, 2024</p>
-          <p class="excerpt">I made this portfolio Website</p>
-          <a href="#" class="read-more">Read More</a>
-        </article>
+      <h1 class="text-center text-primary">Blog</h1>
+
+      <!-- Blog Post Cards -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3><a href="#">Understanding Web Development Trends in 2024</a></h3>
+              <p class="text-muted">August 27, 2024</p>
+              <p class="text-justify">I made this portfolio website to showcase my skills and projects...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more blog posts here using the same structure -->
       </div>
     </section>
-  </main>
+  </div>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="text-center" style="margin-top: 50px; padding: 20px; background-color: #f8f8f8;">
     <p>&copy; 2024 Piyush Kumar. All rights reserved.</p>
   </footer>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
