@@ -1,0 +1,12 @@
+# robots.txt for Piyush Kumar
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /login/
+
+# Allow all other pages
+Allow: /
+
+# Sitemap location
+Sitemap: https://piyushkumar.me/sitemap.xml
