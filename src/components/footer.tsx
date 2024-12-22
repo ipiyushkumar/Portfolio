@@ -1,4 +1,6 @@
-export default function Footer () {
+import Link from 'next/link';
+
+export default function Footer() {
   return (
     <div>
       {/* Footer Section */}
@@ -6,18 +8,18 @@ export default function Footer () {
         <div className="container">
           <p>&copy; 2024 Piyush Kumar. All Rights Reserved.</p>
           <div className="footer-links space-x-4 mb-3">
-            <a href="/" className="text-white hover:underline">
-              Home
-            </a>
-            <a href="/about" className="text-white hover:underline">
-              About
-            </a>
-            <a href="/blogs" className="text-white hover:underline">
-              Blog
-            </a>
-            <a href="/contact" className="text-white hover:underline">
-              Contact
-            </a>
+            <Link href="/" passHref>
+              <a className="text-white hover:underline">Home</a>
+            </Link>
+            <Link href="/about" passHref>
+              <a className="text-white hover:underline">About</a>
+            </Link>
+            <Link href="/blogs" passHref>
+              <a className="text-white hover:underline">Blog</a>
+            </Link>
+            <Link href="/contact" passHref>
+              <a className="text-white hover:underline">Contact</a>
+            </Link>
           </div>
 
           <div className="social-links space-x-4">
@@ -37,5 +39,5 @@ export default function Footer () {
         </div>
       </footer>
     </div>
-  )
+  );
 }

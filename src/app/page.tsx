@@ -11,7 +11,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-primary dark:text-white">Piyush Kumar</h1>
         <h3 className="text-3xl text-primary dark:text-white">Freelancer</h3>
         <h4 className="text-2xl text-danger">FULL Stack Developer</h4>
-        <p className="text-lg mt-4">Hi, I'm Piyush Kumar, a passionate freelancer ready to bring your ideas to life.</p>
+        <p className="text-lg mt-4">Hi, I&#39;m Piyush Kumar, a passionate freelancer ready to bring your ideas to life.</p>
       </div>
 
       {/* Skills Section */}
@@ -61,7 +61,7 @@ export default function Home() {
 
       {/* Call to Action Section */}
       <div className="container text-center mt-6">
-        <h2 className="text-3xl text-danger">Let's Work Together on Your Next Project</h2>
+        <h2 className="text-3xl text-danger">Let&#39;s Work Together on Your Next Project</h2>
         <a href="/contact" className="btn bg-blue-600 text-white py-2 px-6 rounded-lg mt-3 text-lg">
           Schedule a Meeting
         </a>

@@ -1,5 +1,6 @@
 // pages/gallery.tsx
 
+import Image from "next/image";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
@@ -25,7 +26,7 @@ export default function Gallery() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((image, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md">
-              <img src={image.src} alt={image.alt} width={500} height={300} className="w-full h-auto rounded-t-lg" />
+              <Image src={image.src} alt={image.alt} width={500} height={300} className="w-full h-auto rounded-t-lg" />
               <div className="p-4">
                 <p className="text-center text-sm text-muted">{image.description}</p>
               </div>
