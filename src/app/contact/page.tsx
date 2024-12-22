@@ -36,7 +36,7 @@ const Contact = () => {
           <p className="text-lg mb-8">Feel free to get in touch for any projects, collaborations, or questions!</p>
           
           <h3 className="text-xl font-semibold text-gray-700">Email:</h3>
-          <p><a href="mailto:piyushat115@gmail.com" className="text-blue-600">piyushat115@gmail.com</a></p>
+          <p><a href="mailto:piyushat115@gmail.com" className="text-blue-600">piyush@piyushkumar.me</a></p>
           
           <h3 className="text-xl font-semibold text-gray-700 mt-4">WhatsApp:</h3>
           <p><a href="https://wa.me/918872312995" target="_blank" className="text-green-600">+91 88723 12995</a></p>
