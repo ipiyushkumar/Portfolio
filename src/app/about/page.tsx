@@ -35,7 +35,7 @@ export default function About() {
       {/* Image Section */}
       <div className="container text-center mt-8">
         <Image
-          src="https://avatars.githubusercontent.com/u/76026797?v=4"
+          src="/profileImage.jpg"
           alt="Piyush Kumar"
           className="rounded-full mx-auto"
           width={300}
