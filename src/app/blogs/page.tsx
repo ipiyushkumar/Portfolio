@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 
 export default function Blogs() {
   const blogCards = [
-    {title: "Understanding Web Development Trends in 2025", link: "/blogs/understanding-web-development-trends-in-2024", date: "January 01, 2024", description: "I made this portfolio website to showcase my skills and projects..."},
+    {title: "Understanding Web Development Trends in 2025", link: "/blogs/understanding-web-development-trends-in-2025", date: "January 01, 2024", description: "I made this portfolio website to showcase my skills and projects..."},
   ]
   return (
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">

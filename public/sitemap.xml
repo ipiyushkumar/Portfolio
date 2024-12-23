@@ -4,7 +4,7 @@
   <!-- Home Page -->
   <url>
     <loc>https://www.piyushkumar.me/</loc>
-    <lastmod>2024-12-17</lastmod>
+    <lastmod>2024-12-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- About Page -->
   <url>
     <loc>https://www.piyushkumar.me/about</loc>
-    <lastmod>2024-12-17</lastmod>
+    <lastmod>2024-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Services Page -->
   <url>
     <loc>https://www.piyushkumar.me/services</loc>
-    <lastmod>2024-12-17</lastmod>
+    <lastmod>2024-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Blog Page -->
   <url>
     <loc>https://www.piyushkumar.me/blogs</loc>
-    <lastmod>2024-12-17</lastmod>
+    <lastmod>2024-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
   </url>
@@ -36,7 +36,7 @@
   <!-- Gallery Page -->
   <url>
     <loc>https://www.piyushkumar.me/gallery</loc>
-    <lastmod>2024-12-17</lastmod>
+    <lastmod>2024-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
@@ -44,7 +44,7 @@
   <!-- Contact Page -->
   <url>
     <loc>https://www.piyushkumar.me/contact</loc>
-    <lastmod>2024-12-17</lastmod>
+    <lastmod>2024-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -52,7 +52,7 @@
   <!-- Socials Page -->
   <url>
     <loc>https://www.piyushkumar.me/socials</loc>
-    <lastmod>2024-12-17</lastmod>
+    <lastmod>2024-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
