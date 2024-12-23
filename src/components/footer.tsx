@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
           <div className="social-links space-x-4">
             {socialLinks.map((link, index)=>(
-              <Link href={link.link} target="_blank" className="text-white">
+              <Link href={link.link} key={index} target="_blank" className="text-white">
                 {link.name}
               </Link>
             ))}
