@@ -57,7 +57,7 @@ export default function Blog() {
           Web development in 2025 is set to be an exciting field, driven by innovation and the need for better user experiences. By leveraging modern tools like Vercel and Next.js, developers and businesses can build websites that are not only functional but also future-proof.
         </p>
         <p>
-          If you're considering starting your own website, there's no better time than now. With free and powerful resources available, the barriers to entry have never been lower.
+          If you&#39;re considering starting your own website, there&#39;s no better time than now. With free and powerful resources available, the barriers to entry have never been lower.
         </p>
       </section>
       <Footer />
