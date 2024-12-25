@@ -10,7 +10,7 @@ export default function Home() {
       <div className="container text-center mt-5">
         <h1 className="text-4xl font-bold text-primary dark:text-white">Piyush Kumar</h1>
         <h4 className="text-2xl text-danger">FULL Stack Developer</h4>
-        <p className="text-lg mt-4">Hi, I&#39;m Piyush Kumar, a passionate freelancer ready to bring your ideas to life.</p>
+        <p className="text-lg mt-4">Hi, I&#39;m Piyush Kumar, a passionate Developer ready to bring your ideas to life.</p>
       </div>
 
       {/* Skills Section */}
