@@ -10,8 +10,8 @@ export default function About() {
       <Navigation />
 
       {/* About Section */}
-      <div className="container text-center mt-5">
-        <h1 className="text-4xl font-bold text-primary dark:text-white">About Me</h1>
+      <div className="flex flex-col mt-5">
+        <h1 className="text-4xl text-center font-bold text-primary dark:text-white">About Me</h1>
         <p className="text-lg mt-4">
           Hello! I&#39;m <strong className="text-primary">Piyush Kumar</strong>, a passionate web and software developer with 3 years of experience.
         </p>
@@ -25,15 +25,19 @@ export default function About() {
       </div>
 
       {/* Call to Action Section */}
-      <div className="container text-center mt-6">
+      <div className="flex flex-col items-center text-center mt-10">
         <h2 className="text-3xl text-danger">Let&#39;s Work Together on Your Next Project</h2>
-        <a href="/contact" className="btn bg-blue-600 text-white py-2 px-6 rounded-lg mt-3 text-lg">
+        <br />
+        <a 
+          href="/contact" 
+          className="btn bg-blue-600 text-white py-2 px-6 rounded-lg text-lg inline-block"
+        >
           Schedule a Meeting
         </a>
       </div>
 
       {/* Image Section */}
-      <div className="container text-center mt-8">
+      <div className="flex-flex-col text-center mt-8">
         <Image
           src="/profileImage.jpg"
           alt="Piyush Kumar"
