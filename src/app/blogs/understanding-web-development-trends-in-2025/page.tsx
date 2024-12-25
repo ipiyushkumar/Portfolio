@@ -6,7 +6,7 @@ export default function Blog() {
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <Navigation />
       <section className="max-w-7xl mx-auto px-4">
-        <h1>Understanding Web Development Trends in 2025</h1>
+        <h1 className="text-center text-4xl">Understanding Web Development Trends in 2025</h1>
         <br />
         <p>
           The world of web development is constantly evolving, with new technologies and methodologies emerging each year. In 2025, the trends in web development are expected to focus heavily on performance, accessibility, and user experience.
@@ -24,7 +24,7 @@ export default function Blog() {
           On this website, I have utilized cutting-edge technologies like Vercel and Next.js to take my business beyond the limitations of traditional social media platforms. These tools enable lightning-fast performance, seamless scalability, and a modern development experience that enhances both the user and developer journey.
         </p>
         <br />
-        <h2>Key Web Development Trends in 2025</h2>
+        <h2 className="text-3xl">Key Web Development Trends in 2025</h2>
         <ul className="list-disc list-inside">
           <li>
             <strong>AI-Powered Websites:</strong> Artificial Intelligence is being increasingly integrated into websites for personalized user experiences, such as chatbots, recommendations, and predictive analytics.
@@ -43,7 +43,7 @@ export default function Blog() {
           </li>
         </ul>
         <br />
-        <h2>Why Choose Vercel and Next.js?</h2>
+        <h2 className="text-2xl">Why Choose Vercel and Next.js?</h2>
         <p>
           Vercel and Next.js have revolutionized modern web development. Vercel offers a seamless deployment experience with features like automatic scaling and edge network optimizations. Combined with Next.js, a powerful React framework, developers can create highly performant and SEO-friendly web applications.
         </p>
@@ -52,7 +52,7 @@ export default function Blog() {
           These technologies allow businesses to focus on delivering value to their users while minimizing the time spent on infrastructure and configuration. As a result, I was able to expand my business presence online and reach a global audience effectively.
         </p>
         <br />
-        <h2>Conclusion</h2>
+        <h2 className="text-2xl">Conclusion</h2>
         <p>
           Web development in 2025 is set to be an exciting field, driven by innovation and the need for better user experiences. By leveraging modern tools like Vercel and Next.js, developers and businesses can build websites that are not only functional but also future-proof.
         </p>
