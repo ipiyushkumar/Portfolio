@@ -9,7 +9,6 @@ export default function Home() {
       {/* Main Section */}
       <div className="container text-center mt-5">
         <h1 className="text-4xl font-bold text-primary dark:text-white">Piyush Kumar</h1>
-        <h3 className="text-3xl text-primary dark:text-white">Freelancer</h3>
         <h4 className="text-2xl text-danger">FULL Stack Developer</h4>
         <p className="text-lg mt-4">Hi, I&#39;m Piyush Kumar, a passionate freelancer ready to bring your ideas to life.</p>
       </div>
