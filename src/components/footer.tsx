@@ -18,7 +18,7 @@ export default function Footer() {
     <div>
       {/* Footer Section */}
       <footer className="bg-dark text-white py-6 mt-8 text-center">
-        <div className="container">
+        <div className="flex flex-col">
           <p>&copy; 2024 Piyush Kumar. All Rights Reserved.</p>
           <div className="footer-links space-x-4 mb-3">
             {pageLinks.map((link, index) => (
