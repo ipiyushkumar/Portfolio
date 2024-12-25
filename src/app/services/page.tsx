@@ -7,9 +7,9 @@ export default function Services() {
       <Navigation />
 
       {/* Main Section */}
-      <div className="container text-center mt-12">
-        <h1 className="text-5xl font-extrabold text-primary dark:text-white">Our Products and Services</h1>
-        <p className="text-xl mt-6 text-gray-600">
+      <div className="flex flex-col mt-12">
+        <h1 className="text-5xl font-extrabold text-primary dark:text-white text-center">Our Products and Services</h1>
+        <p className="text-xl mt-6">
           We offer a wide range of services to meet your business needs, whether you are looking to build a website, develop custom software, or design engaging user interfaces.
         </p>
       </div>
