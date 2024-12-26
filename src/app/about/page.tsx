@@ -39,7 +39,7 @@ export default function About() {
       {/* Image Section */}
       <div className="flex-flex-col text-center mt-8">
         <Image
-          src="/profileImage.jpg"
+          src="/assets/profileImage.jpg"
           alt="Piyush Kumar"
           className="rounded-full mx-auto"
           width={300}
