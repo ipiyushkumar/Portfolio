@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    {
+      "source": "/about.html",
+      "destination": "https://www.piyushkumar.me/about",
+      "permanent": true
+    },
+    {
+      "source": "/blogs.html",
+      "destination": "https://www.piyushkumar.me/blogs",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "https://www.piyushkumar.me/contact",
+      "permanent": true
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "https://www.piyushkumar.me/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "https://www.piyushkumar.me/services",
+      "permanent": true
+    },
+    {
+      "source": "/socials.html",
+      "destination": "https://www.piyushkumar.me/socials",
+      "permanent": true
+    }
+  ]
+}
