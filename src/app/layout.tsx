@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Piyush Kumar",
+  title: "Piyush Kumar",
   description: "I am an Engineer that specializes in Software and web development. I make high quality web sites in all manner of technologies such as NEXT JS, React JS, ExpressJS, Spring Boot. i also code in several languages such as JavaScript, TypeScript, Java, Python, C, C++, C# and other languages. I am happy to work on new projects that bring innovation to this world",
 };
 
