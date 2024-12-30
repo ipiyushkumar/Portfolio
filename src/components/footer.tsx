@@ -17,19 +17,19 @@ export default function Footer() {
   return (
     <div>
       {/* Footer Section */}
-      <footer className="bg-dark text-white py-6 mt-8 text-center">
+      <footer className="py-6 mt-8 text-center">
         <div className="flex flex-col">
           <p>&copy; 2024 Piyush Kumar. All Rights Reserved.</p>
           <div className="footer-links space-x-4 mb-3">
             {pageLinks.map((link, index) => (
-              <Link href={link.link} key={index} passHref className="text-white hover:underline">
+              <Link href={link.link} key={index} passHref className="hover:underline">
                 {link.name}
               </Link>
             ))}
           </div>
           <div className="social-links space-x-4">
             {socialLinks.map((link, index)=>(
-              <Link href={link.link} key={index} target="_blank" className="text-white">
+              <Link href={link.link} key={index} target="_blank">
                 {link.name}
               </Link>
             ))}

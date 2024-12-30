@@ -50,7 +50,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto py-12 px-4">
+    <div className="container mx-auto mt-5 py-12 px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Information */}
         <div>

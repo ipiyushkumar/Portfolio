@@ -1,59 +1,95 @@
-
 export default function Services() {
+  const services = [
+    {
+      name: "Web Development",
+      description:
+        "I create responsive and dynamic websites tailored to your needs, ensuring an optimal user experience across all devices.",
+    },
+    {
+      name: "Google Cloud Solutions",
+      description:
+        "Leverage the power of Google Cloud to scale your business, optimize workloads, and improve performance with advanced cloud services.",
+    },
+    {
+      name: "AWS Solutions",
+      description:
+        "Build, deploy, and scale applications with Amazon Web Services, utilizing its robust infrastructure and tools.",
+    },
+    {
+      name: "Google APIs Integration",
+      description:
+        "Integrate Google APIs into your applications to enable features like maps, calendars, and analytics seamlessly.",
+    },
+    {
+      name: "Google Ads Script",
+      description:
+        "Automate your ad campaigns with custom Google Ads Scripts to optimize performance and save time.",
+    },
+    {
+      name: "Backup Solutions",
+      description:
+        "Ensure data security with reliable and automated backup solutions tailored to your business needs.",
+    },
+    {
+      name: "Monitoring and Performance",
+      description:
+        "Monitor your systems and applications with real-time tools to ensure uptime and optimal performance.",
+    },
+    {
+      name: "Information and Reporting",
+      description:
+        "Create detailed reports to analyze business data and drive better decision-making processes.",
+    },
+    {
+      name: "Google Ads Reporting",
+      description:
+        "Generate insightful reports for your Google Ads campaigns to track performance and improve ROI.",
+    },
+    {
+      name: "Software Development",
+      description:
+        "Develop custom software solutions tailored to your unique business requirements with cutting-edge technology.",
+    },
+    {
+      name: "Troubleshooting and Technical Support",
+      description:
+        "Provide fast and reliable technical support and troubleshooting to ensure your systems run smoothly.",
+    },
+    {
+      name: "Technology Training",
+      description:
+        "Empower your team with training on the latest technologies to improve productivity and innovation.",
+    },
+  ];
+
   return (
-    <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen p-8 mt-10 font-[family-name:var(--font-geist-sans)]">
       {/* Main Section */}
-      <div className="flex flex-col mt-12">
-        <h1 className="text-5xl font-extrabold text-primary dark:text-white text-center">Our Products and Services</h1>
-        <p className="text-xl mt-6">
-          We offer a wide range of services to meet your business needs, whether you are looking to build a website, develop custom software, or design engaging user interfaces.
-        </p>
+      <div className="flex flex-col">
+        <h1 className="text-5xl font-extrabold text-primary text-center">
+          My Services
+        </h1>
       </div>
 
       {/* Services Section */}
       <section className="max-w-7xl mx-auto px-6 mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Web Development Card */}
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
-            <div className="text-center mb-6">
-              <h2 className="text-xl font-semibold text-black">Web Development</h2>
+          {services.map((service, index) => (
+            <div
+              className="shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300"
+              key={index}
+            >
+              <div className="text-center mb-6">
+                <h2 className="text-xl font-semibold">{service.name}</h2>
+              </div>
+              <div>
+                <p>{service.description}</p>
+              </div>
             </div>
-            <div className="text-gray-700">
-              <p>We create responsive and dynamic websites tailored to your needs, ensuring an optimal user experience across all devices.</p>
-            </div>
-          </div>
-
-          {/* Software Development Card */}
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
-            <div className="text-center mb-6">
-              <h2 className="text-xl font-semibold text-black">Software Development</h2>
-            </div>
-            <div className="text-gray-700">
-              <p>Custom software solutions to streamline your business operations, enhance efficiency, and drive growth.</p>
-            </div>
-          </div>
-
-          {/* UI/UX Design Card */}
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
-            <div className="text-center mb-6">
-              <h2 className="text-xl font-semibold text-black">UI/UX Design</h2>
-            </div>
-            <div className="text-gray-700">
-              <p>Designing user-friendly interfaces with a focus on providing a seamless and intuitive experience for your users.</p>
-            </div>
-          </div>
-
-          {/* Consulting Card */}
-          <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
-            <div className="text-center mb-6">
-              <h2 className="text-xl font-semibold text-black">Consulting</h2>
-            </div>
-            <div className="text-gray-700">
-              <p>Expert advice to help guide you through technology and digital transformation, ensuring your business stays competitive in the digital age.</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </div>
   );
 }
+
