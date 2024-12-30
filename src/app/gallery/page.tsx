@@ -3,13 +3,10 @@
 import Image from "next/image";
 
 export default function Gallery() {
-  const images = [
-    { src: '/image1.jpg', alt: 'Image 1', description: 'Image Description 1' },
-    { src: '/image2.jpg', alt: 'Image 2', description: 'Image Description 2' },
-    { src: '/image3.jpg', alt: 'Image 3', description: 'Image Description 3' },
-    { src: '/image4.jpg', alt: 'Image 4', description: 'Image Description 4' },
-    { src: '/image5.jpg', alt: 'Image 5', description: 'Image Description 5' },
-    { src: '/image6.jpg', alt: 'Image 6', description: 'Image Description 6' },
+  const cyberthon = [
+    { src: '/gallery/Cyberthon1.jpg', alt: 'Cyberthon 1', description: 'Hackathon ended with use recieving the certificates :), i am at the right' },
+    { src: '/gallery/Cyberthon2.jpg', alt: 'Cyberthon 2', description: 'Me Pitching the Idea to the Judges' },
+    { src: '/gallery/Cyberthon3.jpg', alt: 'Cyberthon 3', description: 'We all took our last picture before our departure from the hackathon' },
   ];
 
   return (
@@ -20,8 +17,9 @@ export default function Gallery() {
         <p className="text-center text-lg mb-12">Browse through some of my personal and professional moments.</p>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {images.map((image, index) => (
+        <h2 className="text-3xl">Chandigarh Police, CyberThon by InfoSys</h2>
+        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cyberthon.map((image, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md">
               <Image src={image.src} alt={image.alt} width={500} height={300} className="w-full h-auto rounded-t-lg" />
               <div className="p-4">
