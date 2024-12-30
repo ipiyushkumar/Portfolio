@@ -23,7 +23,7 @@ export default function Navigation() {
   return (
     <div>
       {/* Navigation Bar */}
-      <nav className='fixed top-0 left-0 w-full bg-white shadow-md z-50 sm:px-72'>
+      <nav className='fixed top-0 left-0 w-full shadow-md z-50 sm:px-72'>
         <div className="px-4 py-3 flex justify-between items-center">
           <Link href="/" passHref className="text-2xl font-semibold text-primary">
             Piyush Kumar
