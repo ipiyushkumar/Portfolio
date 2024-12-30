@@ -39,6 +39,7 @@ export default function Home() {
         <h4 className="text-5xl text-danger">FULL Stack Developer</h4>
         <p className="text-lg mt-4">
           Hi, I&#39;m Piyush Kumar, a passionate Developer ready to bring your ideas to life.
+          I am an Engineer that specializes in Software and web development. I make high quality web sites in all manner of technologies such as NEXT JS, React JS, ExpressJS, Spring Boot. i also code in several languages such as JavaScript, TypeScript, Java, Python, C, C++, C# and other languages.
         </p>
       </div>
 
