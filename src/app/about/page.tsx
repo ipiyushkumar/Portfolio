@@ -6,6 +6,7 @@ export default function About() {
   return (
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
+      <h1 className="text-3xl">Overview</h1>
       {/* About Section */}
       <div className="flex flex-col mt-5">
         <p className="text-base leading-6">
