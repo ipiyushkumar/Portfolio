@@ -84,7 +84,7 @@ export default function Home() {
       {/* Call to Action Section */}
       <div className="flex flex-col items-center text-center mt-10">
         <h2 className="text-3xl text-danger">
-          Let&#39;s Work Together on Your Next Project
+          Let&#39;s work together on your next project!
         </h2>
         <br />
         <a
