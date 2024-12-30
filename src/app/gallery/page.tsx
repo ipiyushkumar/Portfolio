@@ -10,7 +10,7 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen p-8 mt-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       {/* Main Section: Gallery */}
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-center text-4xl font-bold text-primary mb-4">Photo Gallery</h1>
