@@ -1,11 +1,7 @@
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 
 export default function Services() {
   return (
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navigation />
-
       {/* Main Section */}
       <div className="flex flex-col mt-12">
         <h1 className="text-5xl font-extrabold text-primary dark:text-white text-center">Our Products and Services</h1>
@@ -58,7 +54,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

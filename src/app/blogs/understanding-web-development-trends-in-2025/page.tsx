@@ -1,10 +1,7 @@
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 
 export default function Blog() {
   return (
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navigation />
       <section className="max-w-7xl mx-auto px-4">
         <h1 className="text-center text-4xl">Understanding Web Development Trends in 2025</h1>
         <br />
@@ -60,7 +57,6 @@ export default function Blog() {
           If you&#39;re considering starting your own website, there&#39;s no better time than now. With free and powerful resources available, the barriers to entry have never been lower.
         </p>
       </section>
-      <Footer />
     </div>
   );
 }

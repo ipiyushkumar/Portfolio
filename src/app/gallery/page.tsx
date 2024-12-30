@@ -1,8 +1,6 @@
 // pages/gallery.tsx
 
 import Image from "next/image";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 
 export default function Gallery() {
   const images = [
@@ -16,7 +14,6 @@ export default function Gallery() {
 
   return (
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navigation />
       {/* Main Section: Gallery */}
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-center text-4xl font-bold text-primary mb-4">Photo Gallery</h1>
@@ -34,7 +31,6 @@ export default function Gallery() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

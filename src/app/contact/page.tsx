@@ -2,8 +2,6 @@
 "use client";
 
 import { useState } from "react";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +51,6 @@ const Contact = () => {
 
   return (
     <div className="container mx-auto py-12 px-4">
-      <Navigation />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Information */}
         <div>
@@ -142,7 +139,6 @@ const Contact = () => {
           )}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

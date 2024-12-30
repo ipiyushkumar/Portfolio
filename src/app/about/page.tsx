@@ -1,13 +1,10 @@
 // pages/about.tsx
 
 import Image from "next/image";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 
 export default function About() {
   return (
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navigation />
 
       {/* About Section */}
       <div className="flex flex-col mt-5">
@@ -47,7 +44,6 @@ export default function About() {
         />
       </div>
 
-      <Footer />
     </div>
   );
 }

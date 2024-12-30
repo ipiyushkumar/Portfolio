@@ -1,6 +1,3 @@
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
-
 export default function Home() {
   const skills = [
     {name : "web development", percentage: "87"},
@@ -10,8 +7,6 @@ export default function Home() {
   ]
   return (
     <div className="min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navigation />
-
       {/* Main Section */}
       <div className="flex flex-col text-center mt-5">
         <h1 className="text-4xl font-bold text-primary dark:text-white">Piyush Kumar</h1>
@@ -58,7 +53,6 @@ export default function Home() {
           Schedule a Meeting
         </a>
       </div>
-      <Footer />
     </div>
   );
 }

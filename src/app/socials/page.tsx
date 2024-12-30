@@ -1,12 +1,8 @@
 // pages/socials.tsx
 
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
-
 export default function Socials() {
   return (
     <div className="min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navigation />
       {/* Main Section */}
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h1 className="text-4xl font-bold text-primary mb-4">Connect with Me on Social Media</h1>
@@ -59,7 +55,6 @@ export default function Socials() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
