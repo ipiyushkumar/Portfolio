@@ -23,7 +23,7 @@ export default function Navigation() {
   return (
     <div>
       {/* Navigation Bar */}
-      <nav className='fixed top-0 left-0 w-full shadow-md z-50 sm:px-72'>
+      <nav className='top-0 left-0 w-full shadow-md z-50 sm:px-72'>
         <div className="px-4 py-3 flex justify-between items-center">
           <Link href="/" passHref className="text-2xl font-semibold text-primary">
             Piyush Kumar
@@ -34,9 +34,9 @@ export default function Navigation() {
             id="navbar-toggle"
             onClick={toggleMenu}
           >
-            <span className="block w-6 h-0.5 mb-1 bg-black"></span>
-            <span className="block w-6 h-0.5 mb-1 bg-black"></span>
-            <span className="block w-6 h-0.5 bg-black"></span>
+            <span className="block w-6 h-0.5 mb-1 bg-black dark:bg-white"></span>
+            <span className="block w-6 h-0.5 mb-1 bg-black dark:bg-white"></span>
+            <span className="block w-6 h-0.5 bg-black dark:bg-white"></span>
           </button>
           {/* Links for Desktop */}
           <div className="hidden sm:flex space-x-6">
