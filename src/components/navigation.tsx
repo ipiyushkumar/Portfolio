@@ -23,9 +23,9 @@ export default function Navigation() {
   return (
     <div>
       {/* Navigation Bar */}
-      <nav className='top-0 left-0 w-full shadow-md z-50 sm:px-72'>
+      <nav className='sticky top-0 z-50  shadow-md px-4 sm:px-10'>
         <div className="px-4 py-3 flex justify-between items-center">
-          <Link href="/" passHref className="text-2xl font-semibold text-primary">
+          <Link href="/" passHref className="text-2xl font-bold">
             Piyush Kumar
           </Link>
           {/* Hamburger Menu */}
@@ -34,18 +34,18 @@ export default function Navigation() {
             id="navbar-toggle"
             onClick={toggleMenu}
           >
-            <span className="block w-6 h-0.5 mb-1 bg-black dark:bg-white"></span>
-            <span className="block w-6 h-0.5 mb-1 bg-black dark:bg-white"></span>
-            <span className="block w-6 h-0.5 bg-black dark:bg-white"></span>
+            <span className="block w-6 h-0.5 mb-1 bg-deepBlue2"></span>
+            <span className="block w-6 h-0.5 mb-1 bg-deepBlue2"></span>
+            <span className="block w-6 h-0.5 bg-deepBlue2"></span>
           </button>
           {/* Links for Desktop */}
-          <div className="hidden sm:flex space-x-6">
+          <div className="hidden sm:flex space-x-6 justify-center">
             {links.map((link, index) => (
               <Link
                 href={link.link}
                 key={index}
                 passHref
-                className="text-lg text-primary hover:underline"
+                className="text-lg hover:underline"
               >
                 {link.name}
               </Link>
@@ -53,20 +53,20 @@ export default function Navigation() {
           </div>
         </div>
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="sm:hidden px-4 py-3 space-y-3">
-            {links.map((link, index) => (
-              <Link
-                href={link.link}
-                key={index}
-                passHref
-                className="block text-lg text-primary hover:underline"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        )}
+        <div
+          className={`sm:hidden px-4 py-3 space-y-3 transition-all duration-[1500ms] ease-in-out ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
+        >
+          {links.map((link, index) => (
+            <Link
+              href={link.link}
+              key={index}
+              passHref
+              className="block text-lg text-primary hover:underline"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
       </nav>
     </div>
   );
