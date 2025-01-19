@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <div>
       {/* Footer Section */}
-      <footer className="py-6 mt-8 text-center">
+      <footer className="py-6 mt-8 text-center bg-gradient-to-b from-deepBlue5 to-deepBlue1 text-white">
         <div className="flex flex-col">
           <p>&copy; 2024 Piyush Kumar. All Rights Reserved.</p>
           <div className="footer-links space-x-4 mb-3">
@@ -28,7 +28,7 @@ export default function Footer() {
             ))}
           </div>
           <div className="social-links space-x-4">
-            {socialLinks.map((link, index)=>(
+            {socialLinks.map((link, index)=> (
               <Link href={link.link} key={index} target="_blank">
                 {link.name}
               </Link>
