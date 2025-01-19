@@ -21,9 +21,9 @@ export default function Navigation() {
   };
 
   return (
-    <div>
+    <div className='sticky top-0 z-50 bg-white'>
       {/* Navigation Bar */}
-      <nav className='sticky top-0 z-50  shadow-md px-4 sm:px-10'>
+      <nav className='shadow-md px-4 sm:px-10'>
         <div className="px-4 py-3 flex justify-between items-center">
           <Link href="/" passHref className="text-2xl font-bold">
             Piyush Kumar
