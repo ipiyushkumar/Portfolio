@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,11 +18,7 @@ export const metadata: Metadata = {
   description: "I am an Engineer that specializes in Software and web development. I make high quality web sites in all manner of technologies such as NEXT JS, React JS, ExpressJS, Spring Boot. i also code in several languages such as JavaScript, TypeScript, Java, Python, C, C++, C# and other languages.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
   return (
     <html lang="en">
       <body
