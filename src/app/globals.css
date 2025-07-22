@@ -6,7 +6,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #020079;
+  --foreground: #000000;
   --letter-spacing: 0.03em; /* Adjust character spacing */
   --line-height: 1.8;      /* Adjust line spacing */
 }

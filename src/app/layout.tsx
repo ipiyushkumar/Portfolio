@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <SpeedInsights />
-        <div className="sm:mx-72">{children}</div>
+        {children}
       </body>
     </html>
   );
